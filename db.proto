@@ -22,3 +22,8 @@ message DBD {
 message DBUpdate {
     repeated DBObject   Objects     = 1;
 }
+
+message PingUpdate {
+    int64       ID      = 1;
+    bool        Alive   = 2;
+}
