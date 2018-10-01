@@ -7,6 +7,7 @@ enum PacketType {
     BOX_REPLY       = 2;
     BOX_ERROR       = 3;
 
-    SYNC_REQUEST    = 4;
-    SYNC_REPLY      = 5;
+    DB_REQUEST      = 10;
+    DB              = 11;
+    DB_UPDATE       = 12;
 }

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package dproto;
+
+// Just an empty message.
+message DBRequest {
+    string  RequestID   = 1;
+}
+
+message DBObject {
+    int64   ID          = 1;
+    bool    Alive       = 2;
+    string  Addr        = 3;
+    bool    Removed     = 10;
+}
+
+message DBD {
+    string              ReplyID     = 1;
+    repeated DBObject   Objects     = 2;
+}
+
+message DBUpdate {
+    repeated DBObject   Objects     = 1;
+}
