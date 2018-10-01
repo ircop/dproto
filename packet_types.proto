@@ -1,0 +1,12 @@
+syntax = "proto3";
+package dproto;
+
+enum PacketType {
+    ERROR           = 0;
+    BOX_REQUEST     = 1;
+    BOX_REPLY       = 2;
+    BOX_ERROR       = 3;
+
+    SYNC_REQUEST    = 4;
+    SYNC_REPLY      = 5;
+}
