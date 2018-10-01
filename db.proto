@@ -7,10 +7,11 @@ message DBRequest {
 }
 
 message DBObject {
-    int64   ID          = 1;
-    bool    Alive       = 2;
-    string  Addr        = 3;
-    bool    Removed     = 10;
+    int64   ID              = 1;
+    bool    Alive           = 2;
+    string  Addr            = 3;
+    bool    Removed         = 10;
+    int64   PingInterval    = 20;
 }
 
 message DBD {
