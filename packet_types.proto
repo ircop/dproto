@@ -10,4 +10,6 @@ enum PacketType {
     DB_REQUEST      = 10;
     DB              = 11;
     DB_UPDATE       = 12;
+
+    PINGUPDATE      = 15;
 }
