@@ -6,12 +6,22 @@ message DBRequest {
     string  RequestID   = 1;
 }
 
+message PollInterface {
+    int64  ID           = 1;
+    string Name         = 2;
+    string Shortname    = 3;
+}
+
 message DBObject {
     int64   ID              = 1;
     bool    Alive           = 2;
     string  Addr            = 3;
     bool    Removed         = 10;
+
     int64   PingInterval    = 20;
+    int64   PollInterval    = 21;
+
+    repeated PollInterface Interfaces = 30;
 }
 
 message DBD {
