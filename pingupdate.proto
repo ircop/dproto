@@ -1,0 +1,10 @@
+syntax = "proto3";
+package dproto;
+
+import "google/protobuf/timestamp.proto";
+
+message Pingupdate {
+    int64                       OID         = 1;
+    bool                        Alive       = 2;
+    google.protobuf.Timestamp   Updated     = 3;
+}
