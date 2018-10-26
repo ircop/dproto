@@ -24,6 +24,7 @@ enum ProfileType {
     MES = 40;
     HUA = 50;
     ROUTEROS = 60;
+    QTECH = 70;
 }
 
 enum Protocol {
