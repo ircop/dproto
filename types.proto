@@ -48,4 +48,5 @@ enum DiscoveryProblem {
     NO_NEIGHBORS    = 0;
     NO_UPLINK       = 10;
     NO_VLANS        = 20;
+    NO_INTERFACES   = 30;
 }
